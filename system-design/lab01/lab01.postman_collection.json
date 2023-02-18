@@ -21,7 +21,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://3.122.205.236:5000/api/v1/joke/generate",
+					"raw": "http://3.122.205.236:8000/api/v1/joke/generate",
 					"protocol": "http",
 					"host": [
 						"3",
@@ -29,7 +29,7 @@
 						"205",
 						"236"
 					],
-					"port": "5000",
+					"port": "8000",
 					"path": [
 						"api",
 						"v1",
@@ -47,7 +47,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"token\": \"123\",\r\n    \"location\": \"Ukraine, Lviv\",\r\n    \"date\": \"2023-02-10\",\r\n    \"requester_name\": \"Oleh Kurpiak\"\r\n}",
+					"raw": "{\r\n    \"token\": \"123\",\r\n    \"location\": \"Ukraine, Zhytomyr\",\r\n    \"date\": \"2023-02-15\",\r\n    \"requester_name\": \"Oleh Kurpiak\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -55,7 +55,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://3.122.205.236:5000/api/v1/weather",
+					"raw": "http://3.122.205.236:8000/api/v1/weather",
 					"protocol": "http",
 					"host": [
 						"3",
@@ -63,7 +63,7 @@
 						"205",
 						"236"
 					],
-					"port": "5000",
+					"port": "8000",
 					"path": [
 						"api",
 						"v1",
