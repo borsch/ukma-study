@@ -1,0 +1,77 @@
+{
+	"info": {
+		"_postman_id": "fbfc5542-1b5e-41c9-bc1c-55f97d0a669d",
+		"name": "lab01",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "644102"
+	},
+	"item": [
+		{
+			"name": "get random joke",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"token\": \"123\",\r\n    \"exclude\": \"dirty\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://3.122.205.236:5000/api/v1/joke/generate",
+					"protocol": "http",
+					"host": [
+						"3",
+						"122",
+						"205",
+						"236"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"joke",
+						"generate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get weather",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"token\": \"123\",\r\n    \"location\": \"Ukraine, Lviv\",\r\n    \"date\": \"2023-02-10\",\r\n    \"requester_name\": \"Oleh Kurpiak\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://3.122.205.236:5000/api/v1/weather",
+					"protocol": "http",
+					"host": [
+						"3",
+						"122",
+						"205",
+						"236"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"weather"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
