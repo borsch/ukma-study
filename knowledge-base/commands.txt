@@ -1,0 +1,31 @@
+d2r-server.bat -p 8080 mapping-iswc.ttl
+
+
+
+
+===== select persons info ====
+SELECT DISTINCT ?name ?email ?homepage WHERE {
+  ?person rdf:type foaf:Person.
+  ?person foaf:name ?name ;
+          foaf:mbox ?email ;
+          foaf:homepage ?homepage
+}
+
+
+===== select person with topic of interest that different from "Semantic Web" =====
+SELECT DISTINCT ?personName ?topicName  WHERE {
+  ?person rdf:type foaf:Person.
+  ?person foaf:name ?personName.
+  ?person iswc:research_interests ?topic.
+  ?topic rdfs:label ?topicName .
+  FILTER (?topicName != "Semantic Web")
+} 
+
+====== select paper and it's creator =======
+SELECT DISTINCT ?paperTitle ?authorName ?organizationName WHERE {
+  ?paper dc:creator ?author .
+  ?author foaf:name ?authorName.
+  ?paper dc:title ?paperTitle  .
+  ?author iswc:has_affiliation ?organization .
+  ?organization rdfs:label ?organizationName
+}
