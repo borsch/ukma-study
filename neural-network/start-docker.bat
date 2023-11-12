@@ -1,0 +1,2 @@
+docker run --name jupyter -p 8888:8888 -d -e DOCKER_STACKS_JUPYTER_CMD=notebook --name jupyter -v "E:\\workspace\\ukma-study\\neural-network":/home/jovyan/work jupyter/datascience-notebook:latest
+docker exec jupyter  /bin/sh -c "pip install -r /home/jovyan/work/requirements.txt"
